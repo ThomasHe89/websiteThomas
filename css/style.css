@@ -85,15 +85,18 @@ button {
 div.fixed {
   position: fixed;
 }
+
 #map {
-  margin-top:13px;
-  margin-bottom:25px;
-  margin-left: 15px;
-  min-width: 63vw;
-  width: 100%;
-  min-height: 79vh;
-  height: 100%;
-  float:left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  */
+  height: 300px;
+  width: 800px;
   border-color: #f2f2f2;
   border-style: outset;
   border-width: 2px;

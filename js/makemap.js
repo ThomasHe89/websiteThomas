@@ -6,8 +6,8 @@ function initMap() {
         var lat = position.coords.latitude;
         var lon = position.coords.longitude;
         // the resulting map is centered around this point!!
-        var lat_ctr = 40.7222889;
-        var lon_ctr = -73.957836;
+        var lat_ctr = 44.790243; 
+        var lon_ctr = -51.394095;
         //showMap is the function that displays the map
         showMap(lat_ctr, lon_ctr,lat,lon);
     });
@@ -36,29 +36,36 @@ function showMap(lat_ctr,lon_ctr,lat,lon) {
 
     var marker;
     var infowindow;
-    var image = 'http://downloadicons.net/sites/default/files/small-guitar-icon-60097.png';
 
     marker = new google.maps.Marker({
-        position: new google.maps.LatLng(lat, lon),
+        position: new google.maps.LatLng(45.5017, -73.5673),
         map: map,
-        icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png",
-        title: "You are here!"
+        title: "Godspeed You! Black Emperor (Montreal, CAN)"
     });
-       infowindow = new google.maps.InfoWindow({
-            content: "You are here!"
-        });
 
-        google.maps.event.addListener(marker,'click', function() {
-            infowindow.open(map,marker);
-        });
-        infowindow.open(map,marker);
+    marker = new google.maps.Marker({
+        position: new google.maps.LatLng(52.3667, 9.7167),
+        map: map,
+        title: "The Hirsch Effekt (Hannover, GER)"
+    });
 
-        // define first marker: Hirsch Effekt (Hannover)
-        marker = new google.maps.Marker({
-            position: new google.maps.LatLng(52.3667, 9.7167),
-            map: map,
-            title: "The Hirsch Effekt"
-        });
+    marker = new google.maps.Marker({
+        position: new google.maps.LatLng(38.5556, -121.4689),
+        map: map,
+        title: "Tera Melos (Sacramento/CA, USA)"
+    });
+
+    marker = new google.maps.Marker({
+        position: new google.maps.LatLng(48.1333, 11.5667),
+        map: map,
+        title: "Colour Haze (Munich, GER)"
+    });
+
+    marker = new google.maps.Marker({
+        position: new google.maps.LatLng(40.7127, -74.0059),
+        map: map,
+        title: "Speedy Ortiz (New York City/NY, USA)"
+    });
 }
 
 function placeMarkerAndPanTo(latLng, map) {
