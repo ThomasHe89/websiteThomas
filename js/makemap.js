@@ -41,8 +41,6 @@ function showMap(lat_ctr,lon_ctr,lat,lon) {
     marker = new google.maps.Marker({
         position: new google.maps.LatLng(lat, lon),
         map: map,
-        icon: image,
-        zIndex: 999,
         title: 'You are here!'
     });
        infowindow = new google.maps.InfoWindow({
@@ -53,17 +51,12 @@ function showMap(lat_ctr,lon_ctr,lat,lon) {
             infowindow.open(map,marker);
         });
         infowindow.open(map,marker);
-/*
-    {% for concert in concert_list_today %}
-    {
+
+        // define first marker: Hirsch Effekt (Hannover)
         marker = new google.maps.Marker({
-            position: new google.maps.LatLng({{ concert.venueLat }}, {{ concert.venueLng }}),
+            position: new google.maps.LatLng(52.3667, 9.7167),
             map: map,
-            title: decode('{{ concert.venueName }} ({{ concert.time }}, {{ concert.ticketPrice }})\n{{ concert.bands }}')
-        });
-    }
-    {% endfor %}
-*/
+            title: "The Hirsch Effekt"});
 }
 
 function placeMarkerAndPanTo(latLng, map) {
