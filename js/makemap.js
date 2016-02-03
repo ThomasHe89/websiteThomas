@@ -25,7 +25,7 @@ function showMap(lat_ctr,lon_ctr,lat,lon) {
     //var myLatLng = new google.maps.LatLng(concerts[0], concerts[1]);
     //var myLatLng = new google.maps.LatLng(testLat,testLng)
     var mapOptions = {
-        zoom: 12,
+        zoom: 2,
         center: myLatLng,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
