@@ -1,4 +1,3 @@
-    <script>
 function initMap() {
     //navigator.geolocation.getCurrentPosition returns the
     //latitude and longitude of wherever the browser is located
