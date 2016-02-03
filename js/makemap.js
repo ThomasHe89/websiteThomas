@@ -41,7 +41,7 @@ function showMap(lat_ctr,lon_ctr,lat,lon) {
     marker = new google.maps.Marker({
         position: new google.maps.LatLng(lat, lon),
         map: map,
-        title: 'You are here!'
+        title: "You are here!"
     });
        infowindow = new google.maps.InfoWindow({
             content: "You are here!"
@@ -56,7 +56,8 @@ function showMap(lat_ctr,lon_ctr,lat,lon) {
         marker = new google.maps.Marker({
             position: new google.maps.LatLng(52.3667, 9.7167),
             map: map,
-            title: "The Hirsch Effekt"});
+            title: "The Hirsch Effekt"
+        });
 }
 
 function placeMarkerAndPanTo(latLng, map) {
