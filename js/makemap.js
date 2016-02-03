@@ -1,16 +1,9 @@
-function initMap() {
-    //navigator.geolocation.getCurrentPosition returns the
-    //latitude and longitude of wherever the browser is located
-    
-    navigator.geolocation.getCurrentPosition(function(position) {
-        var lat = position.coords.latitude;
-        var lon = position.coords.longitude;
-        // the resulting map is centered around this point!!
-        var lat_ctr = 44.790243; 
-        var lon_ctr = -51.394095;
-        //showMap is the function that displays the map
-        showMap(lat_ctr, lon_ctr,lat,lon);
-    });
+function initMap() {   
+    // the resulting map is centered around this point!!
+    var lat_ctr = 44.790243; 
+    var lon_ctr = -51.394095;
+    //showMap is the function that displays the map
+    showMap(lat_ctr, lon_ctr);
 
     //listener loads the map when the page is loaded
     map.addListener('click', function(e) {
