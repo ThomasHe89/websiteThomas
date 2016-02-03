@@ -81,3 +81,23 @@ button {
   background: black;
   color: white;
 }
+
+div.fixed {
+  position: fixed;
+}
+
+#map {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  */
+  height: 300px;
+  width: 800px;
+  border-color: #f2f2f2;
+  border-style: outset;
+  border-width: 2px;
+}
