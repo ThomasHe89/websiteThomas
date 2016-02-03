@@ -41,6 +41,7 @@ function showMap(lat_ctr,lon_ctr,lat,lon) {
     marker = new google.maps.Marker({
         position: new google.maps.LatLng(lat, lon),
         map: map,
+        icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png",
         title: "You are here!"
     });
        infowindow = new google.maps.InfoWindow({
