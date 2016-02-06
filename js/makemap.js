@@ -30,35 +30,23 @@ function showMap(lat_ctr,lon_ctr,lat,lon) {
     var marker;
     var infowindow;
 
+    // this is how to do it using a loop 
+    for (i = 0; i < bandNames.length; i++) {
+        marker = new google.maps.Marker({
+            position: new google.maps.LatLng(bandLat[i], bandLng[i]),
+            map: map,
+            title: bandNames[i] + ' (' + bandLoc[i] + ')'
+        });
+    }
+    
+    // here is an example of the former hard-coded version for GY!BE
+    /*
     marker = new google.maps.Marker({
         position: new google.maps.LatLng(45.5017, -73.5673),
         map: map,
         title: "Godspeed You! Black Emperor (Montreal, CAN)"
     });
-
-    marker = new google.maps.Marker({
-        position: new google.maps.LatLng(52.3667, 9.7167),
-        map: map,
-        title: "The Hirsch Effekt (Hannover, GER)"
-    });
-
-    marker = new google.maps.Marker({
-        position: new google.maps.LatLng(38.5556, -121.4689),
-        map: map,
-        title: "Tera Melos (Sacramento/CA, USA)"
-    });
-
-    marker = new google.maps.Marker({
-        position: new google.maps.LatLng(48.1333, 11.5667),
-        map: map,
-        title: "Colour Haze (Munich, GER)"
-    });
-
-    marker = new google.maps.Marker({
-        position: new google.maps.LatLng(40.7127, -74.0059),
-        map: map,
-        title: "Speedy Ortiz (New York City/NY, USA)"
-    });
+    */
 }
 
 function placeMarkerAndPanTo(latLng, map) {
