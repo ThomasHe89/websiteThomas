@@ -61,6 +61,14 @@ p {
   background-size: 100%;
 }
 
+#bandVideo {
+  height: 200px; 
+  width: 200px; 
+  padding-left: 20px;
+  padding-right: 20px;
+  border-style: none;
+}
+
 a {
   color: red; 
 }
