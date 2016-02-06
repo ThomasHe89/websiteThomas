@@ -23,6 +23,30 @@ var bandImages = [
 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLS0JWSdTRHkbxT6cBF7ZoZ1GZBhamofgteNpXrJw5wMFVG7tm'
 ];
 
+var bandLat = [
+45.5017, 
+52.3667, 
+38.5556, 
+48.1333, 
+40.7127
+];
+
+var bandLng = [
+-73.5673,
+9.7167,
+-121.4689,
+11.5667,
+-74.0059
+];
+
+var bandLoc = [
+'Montreal, CAN',
+'Hannover, GER',
+'Sacramento/CA, USA',
+'Munich, GER',
+'New York City/NY, USA'
+];
+
 // update function that will be called within click functions 
 // (foward and back)
 // carefule: indexing is zero-based like in Python!
