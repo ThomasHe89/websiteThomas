@@ -39,7 +39,7 @@ function showMap(lat_ctr,lon_ctr,lat,lon) {
     marker = new google.maps.Marker({
         position: new google.maps.LatLng(45.5017, -73.5673),
         map: map,
-        title: "Godspeed You! Black Emperor (Montreal, CAN)"
+        title: 'Godspeed You! Black Emperor (Montreal, CAN)'
     });
     */
 }

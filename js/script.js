@@ -59,7 +59,8 @@ var myNumber = 1;
 
 // update function that will be called within click functions 
 // (foward and back)
-// carefule: indexing is zero-based like in Python!
+// careful: indexing is zero-based like in Python!
+
 function updateEverything(currentNumber) {
   $('#bandImage').attr('src',bandImage[currentNumber-1]);
   $('#bandVideo').attr('src',bandVideo[currentNumber-1]);
