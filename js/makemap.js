@@ -4,11 +4,6 @@ function initMap() {
     var lon_ctr = -51.394095;
     //showMap is the function that displays the map
     showMap(lat_ctr, lon_ctr);
-
-    //listener loads the map when the page is loaded
-    map.addListener('click', function(e) {
-        placeMarkerAndPanTo(e.latLng, map);
-  });
 }
 
 function showMap(lat_ctr,lon_ctr,lat,lon) {
@@ -31,11 +26,11 @@ function showMap(lat_ctr,lon_ctr,lat,lon) {
     var infowindow;
 
     // this is how to do it using a loop 
-    for (i = 0; i < bandNames.length; i++) {
+    for (i = 0; i < bandName.length; i++) {
         marker = new google.maps.Marker({
             position: new google.maps.LatLng(bandLat[i], bandLng[i]),
             map: map,
-            title: bandNames[i] + ' (' + bandLoc[i] + ')'
+            title: bandName[i] + ' (' + bandLoc[i] + ')'
         });
     }
     
