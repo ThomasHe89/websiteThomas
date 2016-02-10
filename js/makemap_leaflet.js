@@ -7,30 +7,6 @@
 	
 	for (i = 0; i < bandName.length; i++) {
         var marker = L.marker([bandLat[i], bandLng[i]]).addTo(map);
-        marker.bindPopup(bandName[i] + ' (' + bandLoc[i] + ')');
+        marker.bindPopup(bandName[i].bold() + '<br> (' + bandLoc[i] + ')');
     };
 	
-	/*
-	// add a marker
-	myMapData.forEach(function(element){
-		var marker = L.marker(element.coord).addTo(map);
-	// bind a pop-up to this marker!
-	marker.bindPopup("<b>Hello world!</b><br>I am " + element.name);
-	});
-
-	for (i = 0; i < bandName.length; i++) {
-        marker = new google.maps.Marker({
-            position: new google.maps.LatLng(bandLat[i], bandLng[i]),
-            map: map,
-            title: bandName[i] + ' (' + bandLoc[i] + ')'
-        });
-    }
-    
-	
-	var eastRiver = [40.726885,-73.967063];
-	var upperWestSide = [40.786764,-73.946657]; 
-	var panOptions = { 
-		animate: true,
-		duration: 2
-		};
-	*/
