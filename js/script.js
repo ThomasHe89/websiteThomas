@@ -20,7 +20,7 @@ var bandName = [
 ];
 
 var bandImage = [
-'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZ4TPa8PmJvCXeOS4qGTXhRAe3w4UzWvb3lXGJbHXxgwXpeBXtiw',
+'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSE9HNFUDi5qkUse9vhBJUC4ffS8T-QXn14SnOOXoYEUvxH-NXc',
 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTLNKbGbuDHxU7bF2hM94EXAtc7rhGOtd7tp9uPofBWwy9igkoeYw',
 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfpqgJtxXlC0aUDhJ-g_cLwF9uWNCcVnW9qLA5A6YwsYrd8IR9',
 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwleE5SDmM_7uMrvwFGztNkxbv00ZTTM44LGzsEwBqwWbnZ6LM',
