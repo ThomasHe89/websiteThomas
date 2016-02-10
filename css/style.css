@@ -94,15 +94,21 @@ div.fixed {
   position: fixed;
 }
 
-#map {
+#map_Google {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  /*
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  */
+  height: 300px;
+  width: 800px;
+  border-color: #f2f2f2;
+  border-style: outset;
+  border-width: 2px;
+}
+
+#map_Leaflet {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   height: 300px;
   width: 800px;
   border-color: #f2f2f2;

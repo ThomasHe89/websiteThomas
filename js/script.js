@@ -6,6 +6,10 @@ These are actually just two click functions (one for the 'back' button, one for 
 Text is changed using <span>, image is changed by changing the 'src' attribute of the <img>. 
 This code is somewhat more efficient than the first draft, since I use arrays to store the data that I want to update. The first part of the click function updates the number, then the function 'updateEverything' takes this updated number as input parameter and updates the 3 variable elements on the screen accordingly. 
 */
+var lat_ctr = 44.790243; 
+var lon_ctr = -51.394095;
+
+var ctr = [lat_ctr, lon_ctr];
 
 var bandName = [
 'Godspeed You! Black Emperor',

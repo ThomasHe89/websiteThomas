@@ -1,7 +1,5 @@
 function initMap() {   
     // the resulting map is centered around this point!!
-    var lat_ctr = 44.790243; 
-    var lon_ctr = -51.394095;
     //showMap is the function that displays the map
     showMap(lat_ctr, lon_ctr);
 }
@@ -18,7 +16,7 @@ function showMap(lat_ctr,lon_ctr,lat,lon) {
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     //this figures out where the map is loaded on the html page
-    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+    var map = new google.maps.Map(document.getElementById('map_Google'), mapOptions);
     //create the google pin for the map
     //you can create many of these but each needs its own position object
 
@@ -47,7 +45,7 @@ function showMap(lat_ctr,lon_ctr,lat,lon) {
 function placeMarkerAndPanTo(latLng, map) {
     var marker = new google.maps.Marker({
         position: latLng,
-        map: map
+        map: map_Google
     });
     map.panTo(latLng);
 }

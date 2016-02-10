@@ -9,8 +9,8 @@
   <meta name='description' content='Adv. GIS: 2nd Assignment'>
   <meta name='author' content='ThomasHe89'>
   <link rel='stylesheet' href='css/style.css'>
-  <!-- <link rel='stylesheet' href='css/styles.css?v=1.0'> -->
-
+  <link rel='stylesheet' href='http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css' />
+  
   <!--[if lt IE 9]>
   <script src='http://html5shiv.googlecode.com/svn/trunk/html5.js'></script>
   <![endif]-->
@@ -46,20 +46,32 @@
 	  <p>
 	  Hover over the markers to check out where they're from:<sup><a href='#fn1' id='ref1'>2</a></sup>
 	  </p>
-  	  <div id='map'></div>
-  	  	<script src='js/makemap.js'></script>
-    	<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAMNIdft4M-ByHimxPAqeQ_epF3hOAqUSQ&signed_in=true&callback=initMap' async defer></script>	
-
+  	  <div id='map_Google'></div>
+  	  <p>	
+      In case you're more of a open source kind of person, check this out:	
+      </p>
+      <div id='map_Leaflet'></div>
+     
 	  <hr>
 	  <sup id='fn1'>1. Assignment text:<br>
 	    <div id='quote'>Assignment 1 - "Create a jsfiddle that incorporates basic HTML, CSS, and Javascript/JQuery.  Create content, style it, and add some sort of interactivity with Javascript &amp; jQuery.  Submit the URL for your hackpad on NYU classes."<br> 
 	    Assignment 2 - "Rebuild your jsfiddle from assignment 1 as a file-base web page with external javascript and css files.  Create a github repository for the project and publish it to the web using github pages.  Submit the link to your github pages site." <a href='#ref1' title='Jump back to footnote 1 in the text.'>↩</a></div></sup>
 	  <sup id='fn2'>2. If you have problems with the info windows not showing up, please move the cursor outside of the map area and then try again :) Chrome does a better job than Firefox here. <a href='#ref2' title='Jump back to footnote 2 in the text.'>↩</a></div></sup>  
 	</div>
-
 	<!-- source jquery library -->
-    <script src='js/jquery.js'></script>	
+    <script src='js/jquery.js'></script>
+	<!-- JS script -->
+	<script src='js/script.js'></script>
+	<!-- Google makemap functions -->
+	<script src='js/makemap_google.js'></script>
+	<!-- source Leaflet Javascript -->
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+	<script src='js/makemap_Leaflet.js'></script>
+
+	<!-- additional stuff for Google maps -->
+    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAMNIdft4M-ByHimxPAqeQ_epF3hOAqUSQ&signed_in=true&callback=initMap' async defer></script>
  	<!-- source jquery code -->
- 	<script src='js/script.js'></script>
+ 	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
 </body>
 </html>
